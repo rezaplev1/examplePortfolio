@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		734D8677F8B6EA365E6C8ECB /* Pods_PergiBareng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3B9B4AEA01545BF2DCFFB5 /* Pods_PergiBareng.framework */; };
+		FA282E021DB562CC0035438E /* PhotoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA282E011DB562CC0035438E /* PhotoApi.swift */; };
+		FA282E041DB570BE0035438E /* CoreApiInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA282E031DB570BE0035438E /* CoreApiInterface.swift */; };
+		FA60BF561DAC32D2000322AE /* CoreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60BF551DAC32D2000322AE /* CoreApi.swift */; };
+		FACE43F81D94D5890029D749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE43F71D94D5890029D749 /* AppDelegate.swift */; };
+		FACE43FA1D94D5890029D749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE43F91D94D5890029D749 /* ViewController.swift */; };
+		FACE43FD1D94D5890029D749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACE43FB1D94D5890029D749 /* Main.storyboard */; };
+		FACE44001D94D5890029D749 /* PergiBareng.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FACE43FE1D94D5890029D749 /* PergiBareng.xcdatamodeld */; };
+		FACE44021D94D5890029D749 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACE44011D94D5890029D749 /* Assets.xcassets */; };
+		FACE44051D94D5890029D749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACE44031D94D5890029D749 /* LaunchScreen.storyboard */; };
+		FACE44101D94D5890029D749 /* PergiBarengTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE440F1D94D5890029D749 /* PergiBarengTests.swift */; };
+		FACE441B1D94D5890029D749 /* PergiBarengUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE441A1D94D5890029D749 /* PergiBarengUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FACE440C1D94D5890029D749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACE43EC1D94D5890029D749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACE43F31D94D5890029D749;
+			remoteInfo = PergiBareng;
+		};
+		FACE44171D94D5890029D749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACE43EC1D94D5890029D749 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACE43F31D94D5890029D749;
+			remoteInfo = PergiBareng;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AD222F9C5209CFF7F2C7281 /* Pods_PergiBarengUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PergiBarengUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E342FE4250FB1C886D37CCC /* Pods_PergiBarengTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PergiBarengTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3B9B4AEA01545BF2DCFFB5 /* Pods_PergiBareng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PergiBareng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		554DDE7A7A82A33AD808DF8D /* Pods-PergiBareng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PergiBareng.release.xcconfig"; path = "Pods/Target Support Files/Pods-PergiBareng/Pods-PergiBareng.release.xcconfig"; sourceTree = "<group>"; };
+		9E1A5A9BC12CA34CB7D1544E /* Pods-PergiBareng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PergiBareng.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PergiBareng/Pods-PergiBareng.debug.xcconfig"; sourceTree = "<group>"; };
+		FA282E011DB562CC0035438E /* PhotoApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoApi.swift; sourceTree = "<group>"; };
+		FA282E031DB570BE0035438E /* CoreApiInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreApiInterface.swift; sourceTree = "<group>"; };
+		FA60BF551DAC32D2000322AE /* CoreApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreApi.swift; sourceTree = "<group>"; };
+		FACE43F41D94D5890029D749 /* PergiBareng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PergiBareng.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACE43F71D94D5890029D749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FACE43F91D94D5890029D749 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FACE43FC1D94D5890029D749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FACE43FF1D94D5890029D749 /* PergiBareng.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PergiBareng.xcdatamodel; sourceTree = "<group>"; };
+		FACE44011D94D5890029D749 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FACE44041D94D5890029D749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FACE44061D94D5890029D749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACE440B1D94D5890029D749 /* PergiBarengTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PergiBarengTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACE440F1D94D5890029D749 /* PergiBarengTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PergiBarengTests.swift; sourceTree = "<group>"; };
+		FACE44111D94D5890029D749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACE44161D94D5890029D749 /* PergiBarengUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PergiBarengUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACE441A1D94D5890029D749 /* PergiBarengUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PergiBarengUITests.swift; sourceTree = "<group>"; };
+		FACE441C1D94D5890029D749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FACE43F11D94D5890029D749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				734D8677F8B6EA365E6C8ECB /* Pods_PergiBareng.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACE44081D94D5890029D749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACE44131D94D5890029D749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEFE44C5D63C632C1E9CC22C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E1A5A9BC12CA34CB7D1544E /* Pods-PergiBareng.debug.xcconfig */,
+				554DDE7A7A82A33AD808DF8D /* Pods-PergiBareng.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C3F4C7B611012971A2468307 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B3B9B4AEA01545BF2DCFFB5 /* Pods_PergiBareng.framework */,
+				1E342FE4250FB1C886D37CCC /* Pods_PergiBarengTests.framework */,
+				1AD222F9C5209CFF7F2C7281 /* Pods_PergiBarengUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA60BF541DAC3239000322AE /* CoreApi */ = {
+			isa = PBXGroup;
+			children = (
+				FA60BF551DAC32D2000322AE /* CoreApi.swift */,
+				FA282E011DB562CC0035438E /* PhotoApi.swift */,
+				FA282E031DB570BE0035438E /* CoreApiInterface.swift */,
+			);
+			name = CoreApi;
+			sourceTree = "<group>";
+		};
+		FACE43EB1D94D5890029D749 = {
+			isa = PBXGroup;
+			children = (
+				FACE43F61D94D5890029D749 /* PergiBareng */,
+				FACE440E1D94D5890029D749 /* PergiBarengTests */,
+				FACE44191D94D5890029D749 /* PergiBarengUITests */,
+				FACE43F51D94D5890029D749 /* Products */,
+				BEFE44C5D63C632C1E9CC22C /* Pods */,
+				C3F4C7B611012971A2468307 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FACE43F51D94D5890029D749 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FACE43F41D94D5890029D749 /* PergiBareng.app */,
+				FACE440B1D94D5890029D749 /* PergiBarengTests.xctest */,
+				FACE44161D94D5890029D749 /* PergiBarengUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FACE43F61D94D5890029D749 /* PergiBareng */ = {
+			isa = PBXGroup;
+			children = (
+				FA60BF541DAC3239000322AE /* CoreApi */,
+				FACE43F71D94D5890029D749 /* AppDelegate.swift */,
+				FACE43F91D94D5890029D749 /* ViewController.swift */,
+				FACE43FB1D94D5890029D749 /* Main.storyboard */,
+				FACE44011D94D5890029D749 /* Assets.xcassets */,
+				FACE44031D94D5890029D749 /* LaunchScreen.storyboard */,
+				FACE44061D94D5890029D749 /* Info.plist */,
+				FACE43FE1D94D5890029D749 /* PergiBareng.xcdatamodeld */,
+			);
+			path = PergiBareng;
+			sourceTree = "<group>";
+		};
+		FACE440E1D94D5890029D749 /* PergiBarengTests */ = {
+			isa = PBXGroup;
+			children = (
+				FACE440F1D94D5890029D749 /* PergiBarengTests.swift */,
+				FACE44111D94D5890029D749 /* Info.plist */,
+			);
+			path = PergiBarengTests;
+			sourceTree = "<group>";
+		};
+		FACE44191D94D5890029D749 /* PergiBarengUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FACE441A1D94D5890029D749 /* PergiBarengUITests.swift */,
+				FACE441C1D94D5890029D749 /* Info.plist */,
+			);
+			path = PergiBarengUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FACE43F31D94D5890029D749 /* PergiBareng */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACE441F1D94D5890029D749 /* Build configuration list for PBXNativeTarget "PergiBareng" */;
+			buildPhases = (
+				2315DE1B37B9B95A15AB8F36 /* [CP] Check Pods Manifest.lock */,
+				FACE43F01D94D5890029D749 /* Sources */,
+				FACE43F11D94D5890029D749 /* Frameworks */,
+				FACE43F21D94D5890029D749 /* Resources */,
+				447C387B57BB442F78B7BA2B /* [CP] Embed Pods Frameworks */,
+				6CA0BCCBEA9C4FC3FB3CF7C3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PergiBareng;
+			productName = PergiBareng;
+			productReference = FACE43F41D94D5890029D749 /* PergiBareng.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FACE440A1D94D5890029D749 /* PergiBarengTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACE44221D94D5890029D749 /* Build configuration list for PBXNativeTarget "PergiBarengTests" */;
+			buildPhases = (
+				FACE44071D94D5890029D749 /* Sources */,
+				FACE44081D94D5890029D749 /* Frameworks */,
+				FACE44091D94D5890029D749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACE440D1D94D5890029D749 /* PBXTargetDependency */,
+			);
+			name = PergiBarengTests;
+			productName = PergiBarengTests;
+			productReference = FACE440B1D94D5890029D749 /* PergiBarengTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FACE44151D94D5890029D749 /* PergiBarengUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACE44251D94D5890029D749 /* Build configuration list for PBXNativeTarget "PergiBarengUITests" */;
+			buildPhases = (
+				FACE44121D94D5890029D749 /* Sources */,
+				FACE44131D94D5890029D749 /* Frameworks */,
+				FACE44141D94D5890029D749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACE44181D94D5890029D749 /* PBXTargetDependency */,
+			);
+			name = PergiBarengUITests;
+			productName = PergiBarengUITests;
+			productReference = FACE44161D94D5890029D749 /* PergiBarengUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FACE43EC1D94D5890029D749 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Macbook;
+				TargetAttributes = {
+					FACE43F31D94D5890029D749 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					FACE440A1D94D5890029D749 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FACE43F31D94D5890029D749;
+					};
+					FACE44151D94D5890029D749 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FACE43F31D94D5890029D749;
+					};
+				};
+			};
+			buildConfigurationList = FACE43EF1D94D5890029D749 /* Build configuration list for PBXProject "PergiBareng" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FACE43EB1D94D5890029D749;
+			productRefGroup = FACE43F51D94D5890029D749 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FACE43F31D94D5890029D749 /* PergiBareng */,
+				FACE440A1D94D5890029D749 /* PergiBarengTests */,
+				FACE44151D94D5890029D749 /* PergiBarengUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FACE43F21D94D5890029D749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACE44051D94D5890029D749 /* LaunchScreen.storyboard in Resources */,
+				FACE44021D94D5890029D749 /* Assets.xcassets in Resources */,
+				FACE43FD1D94D5890029D749 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACE44091D94D5890029D749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACE44141D94D5890029D749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2315DE1B37B9B95A15AB8F36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		447C387B57BB442F78B7BA2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PergiBareng/Pods-PergiBareng-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CA0BCCBEA9C4FC3FB3CF7C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PergiBareng/Pods-PergiBareng-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FACE43F01D94D5890029D749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACE43FA1D94D5890029D749 /* ViewController.swift in Sources */,
+				FA282E041DB570BE0035438E /* CoreApiInterface.swift in Sources */,
+				FA282E021DB562CC0035438E /* PhotoApi.swift in Sources */,
+				FACE43F81D94D5890029D749 /* AppDelegate.swift in Sources */,
+				FACE44001D94D5890029D749 /* PergiBareng.xcdatamodeld in Sources */,
+				FA60BF561DAC32D2000322AE /* CoreApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACE44071D94D5890029D749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACE44101D94D5890029D749 /* PergiBarengTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACE44121D94D5890029D749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACE441B1D94D5890029D749 /* PergiBarengUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FACE440D1D94D5890029D749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACE43F31D94D5890029D749 /* PergiBareng */;
+			targetProxy = FACE440C1D94D5890029D749 /* PBXContainerItemProxy */;
+		};
+		FACE44181D94D5890029D749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACE43F31D94D5890029D749 /* PergiBareng */;
+			targetProxy = FACE44171D94D5890029D749 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FACE43FB1D94D5890029D749 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACE43FC1D94D5890029D749 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FACE44031D94D5890029D749 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACE44041D94D5890029D749 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FACE441D1D94D5890029D749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FACE441E1D94D5890029D749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FACE44201D94D5890029D749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E1A5A9BC12CA34CB7D1544E /* Pods-PergiBareng.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PergiBareng/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = id.asik.PergiBareng;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FACE44211D94D5890029D749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 554DDE7A7A82A33AD808DF8D /* Pods-PergiBareng.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PergiBareng/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = id.asik.PergiBareng;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FACE44231D94D5890029D749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PergiBarengTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = id.asik.PergiBarengTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PergiBareng.app/PergiBareng";
+			};
+			name = Debug;
+		};
+		FACE44241D94D5890029D749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PergiBarengTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = id.asik.PergiBarengTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PergiBareng.app/PergiBareng";
+			};
+			name = Release;
+		};
+		FACE44261D94D5890029D749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PergiBarengUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = id.asik.PergiBarengUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PergiBareng;
+			};
+			name = Debug;
+		};
+		FACE44271D94D5890029D749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PergiBarengUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = id.asik.PergiBarengUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PergiBareng;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FACE43EF1D94D5890029D749 /* Build configuration list for PBXProject "PergiBareng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACE441D1D94D5890029D749 /* Debug */,
+				FACE441E1D94D5890029D749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACE441F1D94D5890029D749 /* Build configuration list for PBXNativeTarget "PergiBareng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACE44201D94D5890029D749 /* Debug */,
+				FACE44211D94D5890029D749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACE44221D94D5890029D749 /* Build configuration list for PBXNativeTarget "PergiBarengTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACE44231D94D5890029D749 /* Debug */,
+				FACE44241D94D5890029D749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACE44251D94D5890029D749 /* Build configuration list for PBXNativeTarget "PergiBarengUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACE44261D94D5890029D749 /* Debug */,
+				FACE44271D94D5890029D749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FACE43FE1D94D5890029D749 /* PergiBareng.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FACE43FF1D94D5890029D749 /* PergiBareng.xcdatamodel */,
+			);
+			currentVersion = FACE43FF1D94D5890029D749 /* PergiBareng.xcdatamodel */;
+			path = PergiBareng.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FACE43EC1D94D5890029D749 /* Project object */;
+}

@@ -11,6 +11,7 @@
 		FA282E021DB562CC0035438E /* PhotoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA282E011DB562CC0035438E /* PhotoApi.swift */; };
 		FA282E041DB570BE0035438E /* CoreApiInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA282E031DB570BE0035438E /* CoreApiInterface.swift */; };
 		FA60BF561DAC32D2000322AE /* CoreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60BF551DAC32D2000322AE /* CoreApi.swift */; };
+		FA694C5A1DB6C0AF00AAD695 /* PhotoObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA694C591DB6C0AF00AAD695 /* PhotoObjects.swift */; };
 		FACE43F81D94D5890029D749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE43F71D94D5890029D749 /* AppDelegate.swift */; };
 		FACE43FA1D94D5890029D749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACE43F91D94D5890029D749 /* ViewController.swift */; };
 		FACE43FD1D94D5890029D749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACE43FB1D94D5890029D749 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		FA282E011DB562CC0035438E /* PhotoApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoApi.swift; sourceTree = "<group>"; };
 		FA282E031DB570BE0035438E /* CoreApiInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreApiInterface.swift; sourceTree = "<group>"; };
 		FA60BF551DAC32D2000322AE /* CoreApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreApi.swift; sourceTree = "<group>"; };
+		FA694C591DB6C0AF00AAD695 /* PhotoObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoObjects.swift; sourceTree = "<group>"; };
 		FACE43F41D94D5890029D749 /* PergiBareng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PergiBareng.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACE43F71D94D5890029D749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FACE43F91D94D5890029D749 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,14 @@
 			name = CoreApi;
 			sourceTree = "<group>";
 		};
+		FA694C581DB6BD0100AAD695 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FA694C591DB6C0AF00AAD695 /* PhotoObjects.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		FACE43EB1D94D5890029D749 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 		FACE43F61D94D5890029D749 /* PergiBareng */ = {
 			isa = PBXGroup;
 			children = (
+				FA694C581DB6BD0100AAD695 /* model */,
 				FA60BF541DAC3239000322AE /* CoreApi */,
 				FACE43F71D94D5890029D749 /* AppDelegate.swift */,
 				FACE43F91D94D5890029D749 /* ViewController.swift */,
@@ -364,6 +375,7 @@
 				FACE43F81D94D5890029D749 /* AppDelegate.swift in Sources */,
 				FACE44001D94D5890029D749 /* PergiBareng.xcdatamodeld in Sources */,
 				FA60BF561DAC32D2000322AE /* CoreApi.swift in Sources */,
+				FA694C5A1DB6C0AF00AAD695 /* PhotoObjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CoreApiDelegate {
     @IBOutlet weak var search: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    var photoApi : PhotoApi!;
+    var photoData : [PhotoObjects] = []
+    var photoApi : PhotoApi!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,14 +30,16 @@ class ViewController: UIViewController {
         nav?.barTintColor = UIColor.lightGray
         nav?.tintColor = UIColor.white
         nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-        photoApi = PhotoApi();
+        
+        photoApi = PhotoApi()
+        photoApi.delegate = self
         photoApi.start();
     }
     func keyboardWillShow(notification: NSNotification) {
         
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             
-           self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, keyboardSize.height + 10, 0);
+            self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, keyboardSize.height + 10, 0);
         }
         
     }
@@ -49,6 +54,27 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
+    func finish(interFace: CoreApiInterface, result: AnyObject) {
+        //        let data = result as! NSDictionary
+        
+        if let array = (result as? NSDictionary)?["results"] as? [NSDictionary] {
+            
+            for p in array {
+                let photo = PhotoObjects()
+                photo.email = p["email"] as? String
+                
+                photo.gender = p["gender"] as! String?
+                let picture = p["picture"] as! NSDictionary
+                photo.thumbnail = picture["thumbnail"] as? String
+                photo.photo = picture["medium"] as! String?
+                
+                photoData.append(photo)
+            }
+            print(photoData)
+            
+        }
+        
+    }
     
 }
 

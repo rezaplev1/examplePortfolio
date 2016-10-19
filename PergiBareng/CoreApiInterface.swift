@@ -9,22 +9,25 @@
 import Foundation
 import SwiftyJSON
 
+@objc protocol CoreApiDelegate {
+     @objc func finish(interFace : CoreApiInterface, result : AnyObject)
+}
+
 class CoreApiInterface: CoreApi {
     
+    var delegate : CoreApiDelegate?
+    
     func start(){
-//        let response = CoreApi.sharedInstance.getRequest(param: param()) ->response{
-//        
-//        }
         getRequest(param: param())
     }
     
     func param() -> [String : Any] {
         return [:]
     }
+    
     override func success(data : NSDictionary) {
         
-//        let responsePostArray = data as! NSDictionary
-
+//        delegate?.finish(interFace: self, result: data)
         print(data)
     }
     

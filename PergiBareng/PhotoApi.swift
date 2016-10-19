@@ -21,4 +21,10 @@ class PhotoApi: CoreApiInterface {
        let parameters: [String : Any] = ["results": 5]
         return parameters
     }
+    override func success(data : NSDictionary) {
+        
+        delegate?.finish(interFace: self, result: data)
+        print(data)
+    }
+    
 }

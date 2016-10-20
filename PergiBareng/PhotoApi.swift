@@ -18,7 +18,7 @@ class PhotoApi: CoreApiInterface {
         super.start()
     }
     override func param() -> [String : Any]  {
-       let parameters: [String : Any] = ["results": 5]
+       let parameters: [String : Any] = ["results": 50]
         return parameters
     }
     override func success(data : NSDictionary) {

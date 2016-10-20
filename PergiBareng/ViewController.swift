@@ -12,6 +12,7 @@ import SwiftyJSON
 class ViewController: UIViewController, CoreApiDelegate {
     @IBOutlet weak var search: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var photoData : [PhotoObjects] = []
     var photoApi : PhotoApi!
@@ -26,9 +27,9 @@ class ViewController: UIViewController, CoreApiDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         let nav = self.navigationController?.navigationBar
-        self.navigationItem.title = "Example Reza"
+        self.navigationItem.title = "Example Rezaplepi"
         nav?.barTintColor = UIColor.lightGray
-        nav?.tintColor = UIColor.white
+        nav?.tintColor = UIColor.black
         nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         photoApi = PhotoApi()
@@ -71,7 +72,7 @@ class ViewController: UIViewController, CoreApiDelegate {
                 photoData.append(photo)
             }
             print(photoData)
-            
+            collectionView.reloadData();
         }
         
     }
@@ -108,3 +109,32 @@ extension UITextField {
     }
 }
 
+extension ViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return photoData.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PhotoViewCell
+        cell.emailLbl.text = photoData[indexPath.item].email!
+        let url = NSURL(string: photoData[indexPath.item].photo!)! as URL
+        let data = NSData(contentsOf: url)
+        let imgLayer : CALayer = cell.imgPhoto.layer
+        
+        imgLayer.cornerRadius = 10
+        cell.imgPhoto.clipsToBounds = true
+        cell.imgPhoto.image = UIImage(data: data! as Data)
+        cell.layoutIfNeeded()
+        
+        return cell
+    }
+    
+//    func collectionView(collectionView: UICollectionView, moveItemAtIndexPath sourceIndexPath: IndexPathNSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
+//        
+//        let temp = photoData.removeAtIndex(sourceIndexPath.item)
+//        photoData.insert(temp, atIndex: destinationIndexPath.item)
+//    }
+    
+}
